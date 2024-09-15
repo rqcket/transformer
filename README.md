@@ -8,6 +8,12 @@ The primary aim of this project is to comprehend the fundamental operations of a
 
 ---
 
+## Architecture Implemented 
+
+![Transformer Model Architecture](./images/transformer_architecture.png)
+
+---
+
 ## Dataset
 
 The dataset used is **OPUS (Open Parallel Corpus)**, specifically for the language pair **English-Italian**. It contains a large set of parallel sentences, which are suitable for training machine translation models.
