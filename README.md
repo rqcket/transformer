@@ -1,36 +1,56 @@
-Transformer from Scratch for English to Italian Translation
-Overview
-This project is an implementation of a Transformer model from scratch using PyTorch, trained to perform machine translation from English to Italian. The transformer architecture is one of the most advanced deep learning models, particularly effective for natural language processing tasks like translation, summarization, and text generation.
+# Transformer from Scratch for English to Italian Translation
 
-The training data used is the OPUS dataset, a popular resource for multilingual datasets, which provides parallel corpora for English and Italian sentences.
+## Overview
 
-Project Objective
-The goal of this project is to build a transformer model that translates English sentences into Italian, following the original architecture described by Vaswani et al. (2017) in the paper "Attention is All You Need". Instead of relying on high-level libraries like Hugging Face or pre-built models, this implementation covers the core transformer components, including:
+This project constructs a **Transformer** model from the ground up with **PyTorch**. The model is trained for **English to Italian** translation utilizing the **OPUS dataset**, which offers parallel corpora of English and Italian utterances.
 
-Self-Attention Mechanism
-Positional Encoding
-Multi-Head Attention
-Encoder-Decoder Architecture
-Layer Normalization & Dropout
-Key Features
-Transformer from Scratch: Implements every component of the transformer manually in PyTorch, avoiding the use of pre-built transformer layers to gain a deep understanding of the architecture.
-English-Italian Translation: Uses OPUS as the source dataset to perform translation tasks.
-Training Flexibility: Model training can be customized and extended to more epochs, higher data volumes, or additional preprocessing steps based on hardware capabilities.
-Modular Design: The code is structured in a way that allows easy modifications, making it adaptable to other NLP tasks or languages.
-Dataset
-The OPUS dataset (specifically the Tatoeba subset) was selected for English-Italian translation. It contains parallel sentence pairs that allow the model to learn the mapping between English and Italian languages.
+The primary aim of this project is to comprehend the fundamental operations of a transformer model by implementing it without utilizing high-level libraries such as `transformers`. This facilitated a more profound comprehension of self-attention, positional encoding, multi-head attention, and other essential elements of the transformer architecture. The model architecture follows the original architecture described by Vaswani et al. (2017) in the paper "Attention is All You Need". 
+---
 
-The dataset can be downloaded and preprocessed using scripts in the repository.
+## Dataset
 
-Model Architecture
-The core of this project is the Transformer architecture, which consists of:
+The dataset used is **OPUS (Open Parallel Corpus)**, specifically for the language pair **English-Italian**. It contains a large set of parallel sentences, which are suitable for training machine translation models.
 
-Encoder: A stack of layers that processes the source (English) sentence. Each layer consists of:
+You can find more about the dataset [here](http://opus.nlpl.eu/).
 
-Multi-Head Self-Attention Mechanism
-Layer Normalization
-Position-wise Feed-Forward Neural Networks
-Residual Connections
-Decoder: A stack of layers that processes the target (Italian) sentence during training. It also uses multi-head self-attention, but additionally incorporates cross-attention with the encoder's output to understand the source context.
+---
 
-Positional Encoding: Since transformers do not have recurrence, positional encoding is used to inject sequence information into the model.
+## Key Features of the Project
+
+- **Transformer Implementation from Scratch**: This project constructs each layer and component of the transformer model, including the **self-attention mechanism**, **positional encodings**, **multi-head attention**, and **feed-forward layers**.
+  
+- **Training on OPUS Dataset**: The model is trained to translate sentences from English to Italian, utilizing the OPUS dataset for parallel sentence pairs.
+
+- **Modular Code Structure**: The project is organized in a modular format to facilitate comprehension of each transformer component and their interactions during training and inference.
+
+---
+
+## Model Architecture
+
+The transformer model used in this project follows the original architecture described in **"Attention is All You Need"** by Vaswani et al., including:
+
+- **Multi-Head Self-Attention Mechanism**
+- **Positional Encoding**
+- **Feed-Forward Neural Networks**
+- **Residual Connections & Layer Normalization**
+- **Encoder-Decoder Framework**
+
+---
+
+## Training Details
+
+The training process involves using the OPUS dataset with the transformer model. Due to computational limitations, the full training process has been left incomplete but was designed to provide insightful intermediate results.
+
+The training is easily resumable, and additional fine-tuning steps are outlined in the code.
+
+---
+
+## Prospective Enhancements
+**Training Completion**: Although the preliminary stages of training were successful, attention shifted to other priorities; however, the code is prepared for additional training and refinement.
+
+**Hyperparameter Optimization**: The model may improve with additional adjustment of hyperparameters such as learning rate, batch size, and the quantity of transformer layers.
+
+Evaluation: Incorporate BLEU score evaluations to enhance the assessment of translation quality.
+
+---
+
