@@ -12,6 +12,8 @@ The primary aim of this project is to comprehend the fundamental operations of a
 
 ![Transformer Model Architecture](./images/transformer_1.webp)
 
+<img src="./images/transformer_1.webp" alt="Transformer Model Architecture" width="500"/>
+
 ---
 
 ## Dataset
