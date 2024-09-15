@@ -10,7 +10,7 @@ The primary aim of this project is to comprehend the fundamental operations of a
 
 ## Architecture Implemented 
 
-<img src="./images/transformer_1.webp" alt="Transformer Model Architecture" width="500" height="300"/>
+<img src="./images/transformer_1.webp" alt="Transformer Model Architecture" width="500" height="600"/>
 
 ---
 
