@@ -57,7 +57,7 @@ The training is easily resumable, and additional fine-tuning steps are outlined 
 
 **Hyperparameter Optimization**: The model may improve with additional adjustment of hyperparameters such as learning rate, batch size, and the quantity of transformer layers.
 
-Evaluation: Incorporate BLEU score evaluations to enhance the assessment of translation quality.
+**Evaluation Metrics**: Incorporate BLEU score evaluations to enhance the assessment of translation quality.
 
 ---
 
