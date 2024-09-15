@@ -10,7 +10,7 @@ The primary aim of this project is to comprehend the fundamental operations of a
 
 ## Architecture Implemented 
 
-![Transformer Model Architecture](./images/transformer_architecture.png)
+![Transformer Model Architecture](./images/transformer_1.webp)
 
 ---
 
