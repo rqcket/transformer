@@ -5,6 +5,7 @@
 This project constructs a **Transformer** model from the ground up with **PyTorch**. The model is trained for **English to Italian** translation utilizing the **OPUS dataset**, which offers parallel corpora of English and Italian utterances.
 
 The primary aim of this project is to comprehend the fundamental operations of a transformer model by implementing it without utilizing high-level libraries such as `transformers`. This facilitated a more profound comprehension of self-attention, positional encoding, multi-head attention, and other essential elements of the transformer architecture. The model architecture follows the original architecture described by Vaswani et al. (2017) in the paper "Attention is All You Need". 
+
 ---
 
 ## Dataset
